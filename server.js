@@ -11,6 +11,8 @@ app.post('/', (req, res)=>{
     console.log(req.body)
 })
 
-app.listen(3000, ()=>{
-    console.log("the express server is listening of port 3000"); 
-});
+app.listen(process.env.PORT || 3000, function() {
+    //allows to HEROKU to change port and run on localhost:3000
+    console.log("server is running on port 3000.");
+  });
+  
