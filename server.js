@@ -10,6 +10,7 @@ app.get('/', (req, res)=>{
 app.post('/', (req, res)=>{
     console.log(req.body)
 })
+
 app.listen(3000, ()=>{
     console.log("the express server is listening of port 3000"); 
 });
